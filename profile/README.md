@@ -28,9 +28,12 @@ Each job keeps a link to every original posting, so you can always check it your
 
 ## By the numbers
 
-| **8.4M** | **240,156** | **239** | **123** |
-| :---: | :---: | :---: | :---: |
-| jobs in the API, after merging | job boards read in the last full pass | countries with postings | job-board platforms read |
+| | |
+| ---: | --- |
+| **8.4M** | jobs in the API, after merging |
+| **240,156** | job boards read in the last full pass |
+| **239** | countries with postings |
+| **123** | job-board platforms read |
 
 <sub>Read from <a href="https://headcountlabs.com">headcountlabs.com</a> and the <a href="https://headcountlabs.com/coverage/">coverage page</a> on October 18, 2026. The last full pass over every job board finished at 6:57 AM ET on October 15, 2026. The coverage page always has the current count.</sub>
 
