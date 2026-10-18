@@ -122,7 +122,7 @@ codex mcp add headcountlabs --url https://api.headcountlabs.com/mcp
 
 ## Pricing
 
-Every organization gets **100,000 records free each calendar month** (UTC), with no card needed.
+Every organization gets **1,000,000 records free each calendar month** (UTC), with no card needed.
 After that, you pay for the records delivered, from $0.10 per 1,000, stepping down to $0.04 per 1,000 as monthly volume grows.
 The MCP server, the REST API and exports share the same allowance.
 See [headcountlabs.com/pricing](https://headcountlabs.com/pricing/) for the full rate card and a calculator.
