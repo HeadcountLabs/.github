@@ -134,6 +134,17 @@ See [headcountlabs.com/pricing](https://headcountlabs.com/pricing/) for the full
 | [**claude-plugin**](https://github.com/HeadcountLabs/claude-plugin) | Headcount Labs plugin for Claude Code: ask about open jobs in plain language |
 | [**career-ops-plugin-headcountlabs**](https://github.com/HeadcountLabs/career-ops-plugin-headcountlabs) | A [career-ops](https://github.com/career-ops-hq/career-ops) provider and search hook for the jobs API |
 
+## Job lists
+
+Thirty open job lists, rebuilt every morning from the API. Each job was still listed on the employer's own board within the past three days, copies are merged, and closed jobs drop off at the next update. Every row has pay and remote status where the employer published them, plus a direct apply link.
+
+| | |
+| --- | --- |
+| **Internships and new grad** | [Software engineering internships](https://github.com/HeadcountLabs/software-engineering-internships) · [Data, AI and ML internships](https://github.com/HeadcountLabs/data-science-ai-internships) · [Engineering internships](https://github.com/HeadcountLabs/engineering-internships) · [Business and finance internships](https://github.com/HeadcountLabs/business-finance-internships) · [All internships](https://github.com/HeadcountLabs/internships) · [New grad software engineer](https://github.com/HeadcountLabs/new-grad-software-engineer-jobs) · [Entry-level jobs](https://github.com/HeadcountLabs/entry-level-jobs) · [Entry-level data analyst](https://github.com/HeadcountLabs/entry-level-data-analyst-jobs) |
+| **Remote** | [All remote jobs](https://github.com/HeadcountLabs/remote-jobs) · [Software engineering](https://github.com/HeadcountLabs/remote-software-engineer-jobs) · [Data](https://github.com/HeadcountLabs/remote-data-jobs) · [Product management](https://github.com/HeadcountLabs/remote-product-manager-jobs) · [Marketing](https://github.com/HeadcountLabs/remote-marketing-jobs) · [Sales](https://github.com/HeadcountLabs/remote-sales-jobs) · [Customer support](https://github.com/HeadcountLabs/remote-customer-support-jobs) · [Healthcare](https://github.com/HeadcountLabs/remote-healthcare-jobs) · [Finance and accounting](https://github.com/HeadcountLabs/remote-finance-accounting-jobs) |
+| **By role** | [AI and ML engineer](https://github.com/HeadcountLabs/ai-ml-engineer-jobs) · [Data engineer](https://github.com/HeadcountLabs/data-engineer-jobs) · [Cybersecurity](https://github.com/HeadcountLabs/cybersecurity-jobs) · [Product manager](https://github.com/HeadcountLabs/product-manager-jobs) · [Registered nurse](https://github.com/HeadcountLabs/registered-nurse-jobs) · [Software jobs paying $200k+](https://github.com/HeadcountLabs/high-paying-software-jobs) |
+| **By city (tech)** | [Bay Area](https://github.com/HeadcountLabs/bay-area-tech-jobs) · [New York](https://github.com/HeadcountLabs/new-york-tech-jobs) · [Seattle](https://github.com/HeadcountLabs/seattle-tech-jobs) · [Austin](https://github.com/HeadcountLabs/austin-tech-jobs) · [Boston](https://github.com/HeadcountLabs/boston-tech-jobs) · [Los Angeles](https://github.com/HeadcountLabs/los-angeles-tech-jobs) · [Washington, DC](https://github.com/HeadcountLabs/washington-dc-tech-jobs) |
+
 ## Contact
 
 Questions, missing employers or a job that looks wrong: [headcountlabs.com/contact](https://headcountlabs.com/contact/) or support@headcountlabs.com.
