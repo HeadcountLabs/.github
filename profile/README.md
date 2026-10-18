@@ -1,0 +1,136 @@
+<p align="center">
+  <a href="https://headcountlabs.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+      <img alt="Headcount Labs: the open catalog of the world's jobs. Jobs read from employers' own career pages, merged so each job appears once, and re-checked every day." src="assets/banner-light.png" width="100%">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://api.headcountlabs.com/data/signup"><img alt="Get a free API key" src="https://img.shields.io/badge/Get_a_free_API_key-2E7CC7?style=for-the-badge"></a>
+  <a href="https://headcountlabs.com/mcp/"><img alt="Connect your AI agent" src="https://img.shields.io/badge/Connect_your_AI_agent-0B2D5B?style=for-the-badge"></a>
+  <a href="https://huggingface.co/datasets/HeadcountLabs/job-postings"><img alt="Open dataset on Hugging Face" src="https://img.shields.io/badge/Open_dataset-CC_BY_4.0-54B3C6?style=for-the-badge"></a>
+</p>
+
+<p align="center">
+  <a href="https://headcountlabs.com"><b>Website</b></a> ·
+  <a href="https://headcountlabs.com/docs/"><b>API docs</b></a> ·
+  <a href="https://headcountlabs.com/pricing/"><b>Pricing</b></a> ·
+  <a href="https://headcountlabs.com/coverage/"><b>Coverage</b></a> ·
+  <a href="https://headcountlabs.com/verification/"><b>Check our data</b></a>
+</p>
+
+Most job sites resell the same listings, copied from each other and often weeks out of date.
+Headcount Labs goes to the source: the careers page or applicant tracking system (ATS) board of each employer.
+We read every posting, merge copies of the same opening into one job, and re-check every job daily.
+Each job keeps a link to every original posting, so you can always check it yourself.
+
+## By the numbers
+
+| **8.4M** | **240,156** | **239** | **123** |
+| :---: | :---: | :---: | :---: |
+| jobs in the API, after merging | job boards read in the last full pass | countries with postings | job-board platforms read |
+
+<sub>Read from <a href="https://headcountlabs.com">headcountlabs.com</a> and the <a href="https://headcountlabs.com/coverage/">coverage page</a> on October 18, 2026. The last full pass over every job board finished at 6:57 AM ET on October 15, 2026. The coverage page always has the current count.</sub>
+
+## Pick your way in
+
+| You want to | Use | Start here |
+| --- | --- | --- |
+| Ask Claude, ChatGPT, Codex, Cursor or another AI assistant about jobs | **MCP server** | `https://api.headcountlabs.com/mcp` ([setup](https://headcountlabs.com/mcp/)) |
+| Pull jobs into your own product or pipeline | **REST API** | [Get a key](https://api.headcountlabs.com/data/signup), then `GET /v1/jobs` ([docs](https://headcountlabs.com/docs/)) |
+| Study the job market in a notebook or a warehouse | **Open dataset** | [HeadcountLabs/job-postings](https://huggingface.co/datasets/HeadcountLabs/job-postings) on Hugging Face, CC BY 4.0 |
+| Find a job | **Website** | [headcountlabs.com](https://headcountlabs.com) |
+
+## Quick start
+
+**Agents.** Paste this into your AI agent. It reads our setup guide, adds the server and walks you through sign-in.
+
+```text
+Set up Headcount Labs for me. Fetch https://headcountlabs.com/get-started.md and follow it.
+```
+
+**API.** Create a key at [api.headcountlabs.com/data/keys](https://api.headcountlabs.com/data/keys), then:
+
+```bash
+curl "https://api.headcountlabs.com/v1/jobs?q=registered+nurse&state=NY&limit=25" \
+  --header "Authorization: Bearer $HEADCOUNTLABS_API_KEY"
+```
+
+<details>
+<summary><b>Add the MCP server to a specific client</b></summary>
+
+<br>
+
+**Claude Code**
+
+```bash
+claude mcp add --transport http headcountlabs --scope user https://api.headcountlabs.com/mcp
+```
+
+**Codex CLI**
+
+```bash
+codex mcp add headcountlabs --url https://api.headcountlabs.com/mcp
+```
+
+**Cursor** (`~/.cursor/mcp.json`)
+
+```json
+{
+  "mcpServers": {
+    "headcountlabs": { "url": "https://api.headcountlabs.com/mcp" }
+  }
+}
+```
+
+**Claude Desktop and claude.ai.** Settings, then Connectors, then Add custom connector, with the URL `https://api.headcountlabs.com/mcp`.
+
+**Other clients.** Any client that supports remote MCP servers works. Clients that only run local (stdio) servers can use `npx mcp-remote https://api.headcountlabs.com/mcp`. The [setup guide](https://headcountlabs.com/get-started.md) covers VS Code, Gemini CLI and Windsurf too.
+
+</details>
+
+<p align="center">
+  <a href="https://headcountlabs.com/mcp/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/mcp-dark.png">
+      <img alt="The Headcount Labs MCP page, with the agent setup prompt and the server URL" src="assets/mcp-light.png" width="88%">
+    </picture>
+  </a>
+</p>
+
+## What you get
+
+- **Jobs from the source.** We read employers' own boards on Workday, Greenhouse, Lever, Ashby, iCIMS, SmartRecruiters, Oracle, SAP SuccessFactors and more than 100 other platforms, plus company career sites.
+- **One job, once.** Copies of the same opening on several boards are merged into one job, and the job keeps a link to each original posting.
+- **Fields filled where the employer published them.** Pay, location, work arrangement and employment type, with a state on each field that says whether it is known.
+- **Fresh.** Every job is re-checked daily. Closed jobs drop out once the next read of their board confirms it.
+- **Checkable.** The [verification page](https://headcountlabs.com/verification/) lets anyone count an employer's jobs or compare their own list with ours, free and without an account.
+
+<p align="center">
+  <a href="https://headcountlabs.com/coverage/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/coverage-dark.png">
+      <img alt="The Headcount Labs coverage page, with postings, countries and job-board platforms counted from the catalog" src="assets/coverage-light.png" width="88%">
+    </picture>
+  </a>
+</p>
+
+## Pricing
+
+Every organization gets **100,000 records free each calendar month** (UTC), with no card needed.
+After that, you pay for the records delivered, from $0.10 per 1,000, stepping down to $0.04 per 1,000 as monthly volume grows.
+The MCP server, the REST API and exports share the same allowance.
+See [headcountlabs.com/pricing](https://headcountlabs.com/pricing/) for the full rate card and a calculator.
+
+## Repositories
+
+| Repository | What it is |
+| --- | --- |
+| [**claude-plugin**](https://github.com/HeadcountLabs/claude-plugin) | Headcount Labs plugin for Claude Code: ask about open jobs in plain language |
+| [**career-ops-plugin-headcountlabs**](https://github.com/HeadcountLabs/career-ops-plugin-headcountlabs) | A [career-ops](https://github.com/career-ops-hq/career-ops) provider and search hook for the jobs API |
+
+## Contact
+
+Questions, missing employers or a job that looks wrong: [headcountlabs.com/contact](https://headcountlabs.com/contact/) or support@headcountlabs.com.
