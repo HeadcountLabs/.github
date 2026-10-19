@@ -45,6 +45,9 @@ Each job keeps a link to every original posting, so you can always check it your
 | Pull jobs into your own product or pipeline | **REST API** | [Get a key](https://api.headcountlabs.com/data/signup), then `GET /v1/jobs` ([docs](https://headcountlabs.com/docs/)) |
 | Study the job market in a notebook or a warehouse | **Open dataset** | [HeadcountLabs/job-postings](https://huggingface.co/datasets/HeadcountLabs/job-postings) on Hugging Face, CC BY 4.0 |
 | Find a job | **Website** | [headcountlabs.com](https://headcountlabs.com) |
+| Cite job market figures in an article or paper | **Report** | [The US job market in numbers](https://headcountlabs.com/reports/us-job-market/): jobs by state, top employers, pay and remote share, CC BY 4.0 with a CSV |
+
+Browse the data on the site: [job postings datasets by country, state and occupation](https://headcountlabs.com/data/), [salary data from posted pay](https://headcountlabs.com/salary-data/), [open jobs by employer](https://headcountlabs.com/companies/) and [guides to job data APIs](https://headcountlabs.com/guides/).
 
 ## Quick start
 
@@ -131,6 +134,7 @@ See [headcountlabs.com/pricing](https://headcountlabs.com/pricing/) for the full
 
 | Repository | What it is |
 | --- | --- |
+| [**headcountlabs-mcp**](https://github.com/HeadcountLabs/headcountlabs-mcp) | The hosted MCP server for job postings: setup files for each client, the tool list and examples ([headcountlabs.com/mcp](https://headcountlabs.com/mcp/)) |
 | [**claude-plugin**](https://github.com/HeadcountLabs/claude-plugin) | Headcount Labs plugin for Claude Code: ask about open jobs in plain language |
 | [**career-ops-plugin-headcountlabs**](https://github.com/HeadcountLabs/career-ops-plugin-headcountlabs) | A [career-ops](https://github.com/career-ops-hq/career-ops) provider and search hook for the jobs API |
 
