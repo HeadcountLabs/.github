@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://api.headcountlabs.com/data/signup"><img alt="Get a free API key" src="https://img.shields.io/badge/Get_a_free_API_key-2E7CC7?style=for-the-badge"></a>
   <a href="https://headcountlabs.com/mcp/"><img alt="Connect your AI agent" src="https://img.shields.io/badge/Connect_your_AI_agent-0B2D5B?style=for-the-badge"></a>
-  <a href="https://huggingface.co/datasets/HeadcountLabs/job-postings"><img alt="Open dataset on Hugging Face" src="https://img.shields.io/badge/Open_dataset-CC_BY_4.0-54B3C6?style=for-the-badge"></a>
+  <a href="https://huggingface.co/HeadcountLabs"><img alt="Public dataset subsets on Hugging Face" src="https://img.shields.io/badge/Open_data-ODbL_1.0-54B3C6?style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -47,7 +47,7 @@ Each job keeps a link to every original posting, so you can always check it your
 | --- | --- | --- |
 | Ask Claude, ChatGPT, Codex, Cursor or another AI assistant about jobs | **MCP server** | `https://api.headcountlabs.com/mcp` ([setup](https://headcountlabs.com/mcp/)) |
 | Pull jobs into your own product or pipeline | **REST API** | [Get a key](https://api.headcountlabs.com/data/signup), then `GET /v1/jobs` ([docs](https://headcountlabs.com/docs/)) |
-| Study the job market in a notebook or a warehouse | **Open dataset** | [HeadcountLabs/job-postings](https://huggingface.co/datasets/HeadcountLabs/job-postings) on Hugging Face, ODbL 1.0 ([guide and example queries](https://github.com/HeadcountLabs/job-postings)) |
+| Study the job market in a notebook or a warehouse | **Open dataset** | [Public subsets](https://huggingface.co/HeadcountLabs) on Hugging Face, ODbL 1.0; the full dataset is coming soon ([guide and example queries](https://github.com/HeadcountLabs/job-postings)) |
 | Find a job | **Website** | [headcountlabs.com](https://headcountlabs.com) |
 | Cite job market figures in an article or paper | **Report** | [The US job market in numbers](https://headcountlabs.com/reports/us-job-market/): jobs by state, top employers, pay and remote share, ODbL 1.0 with a CSV |
 
@@ -138,7 +138,7 @@ See [headcountlabs.com/pricing](https://headcountlabs.com/pricing/) for the full
 
 | Repository | What it is |
 | --- | --- |
-| [**job-postings**](https://github.com/HeadcountLabs/job-postings) | Start here. The open dataset of 8,367,463 jobs on Hugging Face (ODbL 1.0), with the schema, example DuckDB and pandas queries, a sample file, the API and MCP quick start, and how to cite it |
+| [**job-postings**](https://github.com/HeadcountLabs/job-postings) | Start here. The job dataset (ODbL 1.0; full download coming soon, public subsets on Hugging Face), with the schema, example DuckDB and pandas queries, a sample file, the API and MCP quick start, and how to cite it |
 | [**headcountlabs-mcp**](https://github.com/HeadcountLabs/headcountlabs-mcp) | The hosted MCP server for job postings: setup files for each client, the tool list and examples ([headcountlabs.com/mcp](https://headcountlabs.com/mcp/)) |
 | [**claude-plugin**](https://github.com/HeadcountLabs/claude-plugin) | Headcount Labs plugin for Claude Code: ask about open jobs in plain language |
 | [**career-ops-plugin-headcountlabs**](https://github.com/HeadcountLabs/career-ops-plugin-headcountlabs) | A [career-ops](https://github.com/career-ops-hq/career-ops) provider and search hook for the jobs API |
